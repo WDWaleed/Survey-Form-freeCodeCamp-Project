@@ -1,3 +1,101 @@
-*, *::before, *::after {
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: var(--white);
+}
+
+:root {
+  --white: #f3f3f3;
+  --darkblue: #1b1b32;
+  --darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --green: #37af65;
+}
+
+#title {
+  margin-top: 2rem;
+}
+
+#description {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
+#title,
+#description {
+  text-align: center;
+  color: var(--darkblue);
+}
+
+form {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem;
+  min-height: 100vh;
+  background-color: var(--darkblue);
+}
+
+form * {
+  font-family: "Poppins", sans-serif;
+}
+
+label {
+  display: block;
+  color: var(--white);
+  font-size: 1.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+form p {
+  color: var(--white);
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+label[for="radio-buttons"],
+label[for="checkboxes"] {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+button {
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin: 1rem 0;
+  width: 100%;
+  cursor: pointer;
 }
